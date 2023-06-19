@@ -1040,7 +1040,8 @@ button {
 }
 
 .products__container {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .products__list {
@@ -1079,8 +1080,16 @@ button {
   text-align: center;
 }
 
-.swiper {
+.swiper,
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
 }
 
 .swiper-wrapper {
@@ -1120,6 +1129,11 @@ button {
 
 .swiper-button-lock {
   display: none !important;
+}
+
+.swiper-horizontal {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 
 /**
